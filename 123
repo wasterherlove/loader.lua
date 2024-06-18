@@ -8,7 +8,7 @@ do
         queue_on_teleport([==[
             if game.CreatorId == 1154360 and game.PlaceId ~= 10228136016 then
                 pcall(function()
-                    script_key = readfile("ECLIPSE_KEY.txt")
+                    script_key = readfile("serotonin_Key.txt")
                     memorystats.cache("Gui")
                     task.wait();
                     loadstring(game:HttpGet("https://raw.githubusercontent.com/wasterherlove/noree/main/12"))()
