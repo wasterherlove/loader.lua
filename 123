@@ -1,0 +1,21 @@
+writefile("serotonin.Key.txt", script_key)
+
+do
+    if game.PlaceId == 16033173781 then -- Da Hood
+        local Loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/wasterherlove/loader.lua/main/loaders",true))()
+        Loader:Initialize()
+        --load
+        queue_on_teleport([==[
+            if game.CreatorId == 1154360 and game.PlaceId ~= 10228136016 then
+                pcall(function()
+                    script_key = readfile("ECLIPSE_KEY.txt")
+                    memorystats.cache("Gui")
+                    task.wait();
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/wasterherlove/noree/main/12"))()
+                end)
+            end;
+        ]==])
+    elseif game.PlaceId == 16033173781 then -- Phantom Forces
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wasterherlove/noree/main/12"))()
+    end
+end
